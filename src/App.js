@@ -9,11 +9,11 @@ import about from "./images/menu/aboutOffHover.png";
 import skills from "./images/menu/skillsOffHover.png";
 import workplay from "./images/menu/workplayOffHover.png";
 import contact from "./images/menu/contactOffHover.png";
-import Home from "./components/Home";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import Home from "./screens/Home";
+import About from "./screens/About";
+import Skills from "./screens/Skills";
+import Projects from "./screens/Projects";
+import Contact from "./screens/Contact";
 
 class App extends Component {
   render() {
