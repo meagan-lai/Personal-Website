@@ -22,64 +22,22 @@ const styles = {
 function Projects(props) {
   const { classes } = props;
   return (
-    <div style={{ display: "flex", flexDirection: "row" }}>
+    <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
       <ProjectCard
         projectName="Sustainify"
         projectDescription="Lizards are a widespread group of squamate reptiles, with over
               6,000 species, ranging across all continents except Antarctica"
       />
-      <Card className={classes.card}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image="/static/images/cards/contemplative-reptile.jpg"
-            title="Contemplative Reptile"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              SpeakRead
-            </Typography>
-            <Typography component="p">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
-        </CardActions>
-      </Card>
-      <Card className={classes.card}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image="/static/images/cards/contemplative-reptile.jpg"
-            title="Contemplative Reptile"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              DUHigh
-            </Typography>
-            <Typography component="p">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
-        </CardActions>
-      </Card>
+      <ProjectCard
+        projectName="SpeakRead"
+        projectDescription="Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica"
+      />
+      <ProjectCard
+        projectName="DUHigh"
+        projectDescription="Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica"
+      />
     </div>
   );
 }
