@@ -5,6 +5,22 @@ body,
   height: 100%;
 }
 
+a {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+a:-webkit-any-link {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+a:before {
+  color: inherit;
+  text-decoration: none;
+}
 /* class is . */
 .image-word {
   margin-right: 25px;

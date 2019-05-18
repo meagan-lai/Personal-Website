@@ -22,7 +22,7 @@ const styles = {
 function Projects(props) {
   const { classes } = props;
   return (
-    <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
+    <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-around" }}>
       <ProjectCard
         projectName="Sustainify"
         projectDescription="Lizards are a widespread group of squamate reptiles, with over

@@ -13,7 +13,6 @@ import Home from "./screens/Home";
 import About from "./screens/About";
 import Skills from "./screens/Skills";
 import Projects from "./screens/Projects";
-import Contact from "./screens/Contact";
 
 class App extends Component {
   render() {
@@ -45,17 +44,12 @@ class App extends Component {
               <Link to="/workplay">
                 <img src={workplay} />
               </Link>
-              <img style={{ margin: 5 }} src={separator} />
-              <Link to="/contact">
-                <img src={contact} />
-              </Link>
             </Toolbar>
           </AppBar>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
           <Route path="/skills" component={Skills} />
           <Route path="/workplay" component={Projects} />
-          <Route path="/contact" component={Contact} />
         </div>
       </Router>
     );
