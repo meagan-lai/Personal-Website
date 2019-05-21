@@ -26,6 +26,12 @@ a:before {
   margin-right: 25px;
 }
 
+.active {
+  background-image: url(./images/menu/active-icon.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
 .apostrophe {
   position: relative;
   top: -103px;
@@ -36,6 +42,9 @@ a:before {
   margin: 0;
   padding: 0;
   background: #f9c433;
+}
+
+.link:hover {
 }
 
 /* id is # */

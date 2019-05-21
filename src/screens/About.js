@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -93,31 +93,37 @@ function About(props) {
         style={{ background: "transparent", boxShadow: "none" }}
       >
         <Toolbar className={classes.toolbar}>
-          <Tooltip title="Email">
-            <IconButton color="inherit">
+          <Tooltip title="MeaganLai@hotmail.com" placement="bottom">
+            <IconButton color="inherit" href="mailto:meaganlai@hotmail.com">
               <span class="mdi mdi-email-outline" />
             </IconButton>
           </Tooltip>
-          <Tooltip title="Linkedin">
-            <a href="https://www.linkedin.com/in/meagan-lai-600822131/">
-              <IconButton color="inherit">
-                <span class="mdi mdi-linkedin" />
-              </IconButton>
-            </a>
+          <Tooltip title="Linkedin" placement="bottom">
+            <IconButton
+              color="inherit"
+              href="https://www.linkedin.com/in/meagan-lai-600822131/"
+              target="_blank"
+            >
+              <span class="mdi mdi-linkedin" />
+            </IconButton>
           </Tooltip>
-          <Tooltip title="Github">
-            <a href="https://github.com/meagan-lai">
-              <IconButton color="inherit">
-                <span class="mdi mdi-github-circle" />
-              </IconButton>
-            </a>
+          <Tooltip title="GitHub" placement="bottom">
+            <IconButton
+              color="inherit"
+              href="https://github.com/meagan-lai"
+              target="_blank"
+            >
+              <span class="mdi mdi-github-circle" />
+            </IconButton>
           </Tooltip>
-          <Tooltip title="Devpost">
-            <a href="https://devpost.com/meaganlai">
-              <IconButton color="inherit">
-                <span class="mdi mdi-alpha-d-circle" />
-              </IconButton>
-            </a>
+          <Tooltip title="Devpost" placement="bottom">
+            <IconButton
+              color="inherit"
+              href="https://devpost.com/meaganlai"
+              target="_blank"
+            >
+              <span class="mdi mdi-alpha-d-circle" />
+            </IconButton>
           </Tooltip>
         </Toolbar>
       </AppBar>

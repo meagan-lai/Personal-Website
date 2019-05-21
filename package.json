@@ -11,6 +11,7 @@
     "react-motion": "^0.5.2",
     "react-native-gesture-handler": "^1.1.0",
     "react-navigation": "^3.8.1",
+    "react-reveal": "^1.2.2",
     "react-router": "3",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
