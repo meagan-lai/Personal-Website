@@ -8,6 +8,10 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import IconButton from "@material-ui/core/IconButton";
+import Tooltip from "@material-ui/core/Tooltip";
 
 const styles = {
   card: {
@@ -22,10 +26,10 @@ export default class ProjectCard extends Component {
   render() {
     return (
       <Card style={styles.card}>
-        <CardActionArea>
+        <CardActionArea href={this.props.devpostLink} target="_blank">
           <CardMedia
             style={styles.media}
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={this.props.projectImage}
             title="Contemplative Reptile"
           />
           <CardContent>
@@ -38,12 +42,27 @@ export default class ProjectCard extends Component {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
+          {this.props.devpostLink ? (
+            <Tooltip title="Devpost" placement="bottom">
+              <IconButton
+                color="#CCCCCC"
+                href={this.props.devpostLink}
+                target="_blank"
+              >
+                <span class="mdi mdi-alpha-d-circle" />
+              </IconButton>
+            </Tooltip>
+          ) : null}
+
+          <Tooltip title="GitHub" placement="bottom">
+            <IconButton
+              color="secondary"
+              href={this.props.githubLink}
+              target="_blank"
+            >
+              <span class="mdi mdi-github-circle" />
+            </IconButton>
+          </Tooltip>
         </CardActions>
       </Card>
     );
