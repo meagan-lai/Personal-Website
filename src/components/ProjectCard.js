@@ -15,7 +15,8 @@ import Tooltip from "@material-ui/core/Tooltip";
 
 const styles = {
   card: {
-    maxWidth: 345
+    maxWidth: 345,
+    margin: 20
   },
   media: {
     height: 140
