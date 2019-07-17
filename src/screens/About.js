@@ -42,9 +42,9 @@ function About(props) {
       <p className={classes.title}>Hey, I'm Meagan</p>
       <div className={classes.root}>
         <p>
-          I'm a UX designer currently based in Waterloo. I'm currently working
-          for Information Systems and Technology (IST) at the University of
-          Waterloo.
+          I'm a front-end developer currently based in Waterloo. I'm currently
+          working for Information Systems and Technology (IST) at the University
+          of Waterloo.
         </p>
         <p>
           I love meeting new people - contact me if you like to chat over coffee
