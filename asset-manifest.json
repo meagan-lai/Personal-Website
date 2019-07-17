@@ -1,15 +1,15 @@
 {
-  "main.css": "/meagan-lai/Personal-Website/static/css/main.ce81a8d7.chunk.css",
-  "main.js": "/meagan-lai/Personal-Website/static/js/main.88607009.chunk.js",
-  "main.js.map": "/meagan-lai/Personal-Website/static/js/main.88607009.chunk.js.map",
-  "runtime~main.js": "/meagan-lai/Personal-Website/static/js/runtime~main.a5b22a95.js",
-  "runtime~main.js.map": "/meagan-lai/Personal-Website/static/js/runtime~main.a5b22a95.js.map",
-  "static/js/2.a24bc958.chunk.js": "/meagan-lai/Personal-Website/static/js/2.a24bc958.chunk.js",
-  "static/js/2.a24bc958.chunk.js.map": "/meagan-lai/Personal-Website/static/js/2.a24bc958.chunk.js.map",
-  "index.html": "/meagan-lai/Personal-Website/index.html",
-  "precache-manifest.cedd04908500651871ede593406702ba.js": "/meagan-lai/Personal-Website/precache-manifest.cedd04908500651871ede593406702ba.js",
-  "service-worker.js": "/meagan-lai/Personal-Website/service-worker.js",
-  "static/css/main.ce81a8d7.chunk.css.map": "/meagan-lai/Personal-Website/static/css/main.ce81a8d7.chunk.css.map",
-  "static/media/duhighApp.png": "/meagan-lai/Personal-Website/static/media/duhighApp.ff669bae.png",
-  "static/media/sustainifyApp.png": "/meagan-lai/Personal-Website/static/media/sustainifyApp.2b153795.png"
+  "main.css": "./static/css/main.ce81a8d7.chunk.css",
+  "main.js": "./static/js/main.b2181a25.chunk.js",
+  "main.js.map": "./static/js/main.b2181a25.chunk.js.map",
+  "runtime~main.js": "./static/js/runtime~main.2c977d9b.js",
+  "runtime~main.js.map": "./static/js/runtime~main.2c977d9b.js.map",
+  "static/js/2.a24bc958.chunk.js": "./static/js/2.a24bc958.chunk.js",
+  "static/js/2.a24bc958.chunk.js.map": "./static/js/2.a24bc958.chunk.js.map",
+  "index.html": "./index.html",
+  "precache-manifest.6575372d6c57dcf4038d0d8f0283d929.js": "./precache-manifest.6575372d6c57dcf4038d0d8f0283d929.js",
+  "service-worker.js": "./service-worker.js",
+  "static/css/main.ce81a8d7.chunk.css.map": "./static/css/main.ce81a8d7.chunk.css.map",
+  "static/media/duhighApp.png": "./static/media/duhighApp.ff669bae.png",
+  "static/media/sustainifyApp.png": "./static/media/sustainifyApp.2b153795.png"
 }
