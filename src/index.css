@@ -12,3 +12,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+@font-face {
+  font-family: "MyFont";
+  src: url(./fonts/adamfont-webfont.woff);
+}

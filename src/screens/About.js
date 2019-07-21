@@ -10,7 +10,10 @@ import Button from "@material-ui/core/Button";
 const styles = theme => ({
   appBar: {
     top: "auto",
-    bottom: 60
+    bottom: 10,
+    background: "transparent",
+    boxShadow: "none",
+    position: "absolute"
   },
   toolbar: {
     alignItems: "center",
@@ -38,7 +41,7 @@ const styles = theme => ({
 function About(props) {
   const { classes } = props;
   return (
-    <React.Fragment>
+    <div>
       <p className={classes.title}>Hey, I'm Meagan</p>
       <div className={classes.root}>
         <p>
@@ -54,12 +57,11 @@ function About(props) {
       <Button variant="contained" className={classes.button}>
         Resumé
       </Button>
-      <AppBar
-        position="fixed"
-        className={classes.appBar}
-        style={{ background: "transparent", boxShadow: "none" }}
-      >
-        <Toolbar className={classes.toolbar}>
+      <AppBar className={classes.appBar}>
+        <Toolbar
+          className={classes.toolbar}
+          style={{ margin: 10, paddingBottom: 50 }}
+        >
           <Tooltip title="MeaganLai@hotmail.com" placement="bottom">
             <IconButton color="inherit" href="mailto:meaganlai@hotmail.com">
               <span class="mdi mdi-email-outline" />
@@ -94,7 +96,7 @@ function About(props) {
           </Tooltip>
         </Toolbar>
       </AppBar>
-    </React.Fragment>
+    </div>
   );
 }
 

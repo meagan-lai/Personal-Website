@@ -15,6 +15,7 @@ import iDashed from "../images/title-letters/iDashed.png";
 import mDashed from "../images/title-letters/mDashed.png";
 import nDashed from "../images/title-letters/nDashed.png";
 import apostropheDashed from "../images/title-letters/commaDashed.png";
+import Icon from "@material-ui/core/Icon";
 
 export class Home extends React.Component {
   render() {
@@ -24,7 +25,6 @@ export class Home extends React.Component {
         <div
           align="middle"
           style={{
-            height: "100%",
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
@@ -94,6 +94,40 @@ export class Home extends React.Component {
               onMouseOut={e => (e.currentTarget.src = n)}
             />
           </span>
+        </div>
+        <div
+          style={{
+            fontFamily: "MyFont",
+            fontSize: 30,
+            color: "#605f5f",
+            textAlign: "center"
+          }}
+        >
+          Front-End Developer | Aspiring Entrepreneur
+        </div>
+        <div
+          align="middle"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center"
+          }}
+        >
+          <Icon style={{ color: "white", margin: 10, fontSize: 40 }}>
+            <span class="mdi mdi-language-javascript" />
+          </Icon>
+          <Icon style={{ color: "white", margin: 10, fontSize: 40 }}>
+            <span class="mdi mdi-react" />
+          </Icon>
+          <Icon style={{ color: "white", margin: 10, fontSize: 40 }}>
+            <span class="mdi mdi-language-python" />
+          </Icon>
+          <Icon style={{ color: "white", margin: 10, fontSize: 40 }}>
+            <span class="mdi mdi-language-html5" />
+          </Icon>
+          <Icon style={{ color: "white", margin: 10, fontSize: 40 }}>
+            <span class=" mdi mdi-language-css3" />
+          </Icon>
         </div>
       </div>
     );

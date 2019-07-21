@@ -15,11 +15,12 @@ import Tooltip from "@material-ui/core/Tooltip";
 
 const styles = {
   card: {
-    maxWidth: 345,
-    margin: 20
+    maxWidth: 400,
+    margin: 20,
+    borderRadius: 15
   },
   media: {
-    height: 140
+    height: 300
   }
 };
 
@@ -28,16 +29,12 @@ export default class ProjectCard extends Component {
     return (
       <Card style={styles.card}>
         <CardActionArea href={this.props.devpostLink} target="_blank">
-          <CardMedia
-            style={styles.media}
-            image={this.props.projectImage}
-            title="Contemplative Reptile"
-          />
+          <CardMedia style={styles.media} image={this.props.projectImage} />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
               {this.props.projectName}
             </Typography>
-            <Typography component="p">
+            <Typography component="p" color="textSecondary">
               {this.props.projectDescription}
             </Typography>
           </CardContent>

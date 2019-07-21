@@ -8,13 +8,13 @@ import home from "./images/menu/homeOffHover.png";
 import onHome from "./images/menu/homeOnHover.png";
 import about from "./images/menu/aboutOffHover.png";
 import onAbout from "./images/menu/aboutOnHover.png";
-import skills from "./images/menu/skillsOffHover.png";
-import onSkills from "./images/menu/skillsOnHover.png";
+import contact from "./images/menu/contactOffHover.png";
+import onContact from "./images/menu/contactOnHover.png";
 import workplay from "./images/menu/workplayOffHover.png";
 import onWorkplay from "./images/menu/workplayOnHover.png";
 import Home from "./screens/Home";
 import About from "./screens/About";
-import Skills from "./screens/Skills";
+import Contact from "./screens/Contact";
 import Projects from "./screens/Projects";
 import Slide from "react-reveal/Slide";
 
@@ -40,6 +40,7 @@ class App extends Component {
           <AppBar
             position="static"
             style={{
+              marginTop: 15,
               background: "transparent",
               boxShadow: "none",
               display: "flex",
@@ -84,24 +85,6 @@ class App extends Component {
               </Link>
               <img style={{ margin: 5 }} src={separator} />
               <Link
-                to="/skills"
-                onClick={() => this.goTo("Skills")}
-                style={{
-                  height: 40,
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center"
-                }}
-                className={this.state.activeBtn === "Skills" ? "active" : null}
-              >
-                <img
-                  src={skills}
-                  onMouseOver={e => (e.currentTarget.src = onSkills)}
-                  onMouseOut={e => (e.currentTarget.src = skills)}
-                />
-              </Link>
-              <img style={{ margin: 5 }} src={separator} />
-              <Link
                 to="/workplay"
                 onClick={() => this.goTo("Projects")}
                 style={{
@@ -120,11 +103,29 @@ class App extends Component {
                   onMouseOut={e => (e.currentTarget.src = workplay)}
                 />
               </Link>
+              <img style={{ margin: 5 }} src={separator} />
+              <Link
+                to="/contact"
+                onClick={() => this.goTo("Contact")}
+                style={{
+                  height: 40,
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center"
+                }}
+                className={this.state.activeBtn === "Contact" ? "active" : null}
+              >
+                <img
+                  src={contact}
+                  onMouseOver={e => (e.currentTarget.src = onContact)}
+                  onMouseOut={e => (e.currentTarget.src = contact)}
+                />
+              </Link>
             </Toolbar>
           </AppBar>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/skills" component={Skills} />
+          <Route path="/contact" component={Contact} />
           <Route path="/workplay" component={Projects} />
         </div>
       </Router>
