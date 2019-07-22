@@ -8,15 +8,13 @@ import home from "./images/menu/homeOffHover.png";
 import onHome from "./images/menu/homeOnHover.png";
 import about from "./images/menu/aboutOffHover.png";
 import onAbout from "./images/menu/aboutOnHover.png";
-import contact from "./images/menu/contactOffHover.png";
-import onContact from "./images/menu/contactOnHover.png";
 import workplay from "./images/menu/workplayOffHover.png";
 import onWorkplay from "./images/menu/workplayOnHover.png";
 import Home from "./screens/Home";
 import About from "./screens/About";
-import Contact from "./screens/Contact";
 import Projects from "./screens/Projects";
-import Slide from "react-reveal/Slide";
+import IconButton from "@material-ui/core/IconButton";
+import Tooltip from "@material-ui/core/Tooltip";
 
 class App extends Component {
   constructor(props) {
@@ -103,30 +101,63 @@ class App extends Component {
                   onMouseOut={e => (e.currentTarget.src = workplay)}
                 />
               </Link>
-              <img style={{ margin: 5 }} src={separator} />
-              <Link
-                to="/contact"
-                onClick={() => this.goTo("Contact")}
-                style={{
-                  height: 40,
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center"
-                }}
-                className={this.state.activeBtn === "Contact" ? "active" : null}
-              >
-                <img
-                  src={contact}
-                  onMouseOver={e => (e.currentTarget.src = onContact)}
-                  onMouseOut={e => (e.currentTarget.src = contact)}
-                />
-              </Link>
             </Toolbar>
           </AppBar>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
+
           <Route path="/workplay" component={Projects} />
+          <AppBar
+            style={{
+              top: "auto",
+              bottom: 10,
+              background: "transparent",
+              boxShadow: "none",
+              position: "absolute"
+            }}
+          >
+            <Toolbar
+              style={{
+                margin: 10,
+                paddingBottom: 50,
+                alignItems: "center",
+                justifyContent: "center"
+              }}
+            >
+              <Tooltip title="MeaganLai@hotmail.com" placement="bottom">
+                <IconButton color="inherit" href="mailto:meaganlai@hotmail.com">
+                  <span class="mdi mdi-email-outline" />
+                </IconButton>
+              </Tooltip>
+              <Tooltip title="Linkedin" placement="bottom">
+                <IconButton
+                  color="inherit"
+                  href="https://www.linkedin.com/in/meagan-lai-600822131/"
+                  target="_blank"
+                >
+                  <span class="mdi mdi-linkedin" />
+                </IconButton>
+              </Tooltip>
+              <Tooltip title="GitHub" placement="bottom">
+                <IconButton
+                  color="inherit"
+                  href="https://github.com/meagan-lai"
+                  target="_blank"
+                >
+                  <span class="mdi mdi-github-circle" />
+                </IconButton>
+              </Tooltip>
+              <Tooltip title="Devpost" placement="bottom">
+                <IconButton
+                  color="inherit"
+                  href="https://devpost.com/meaganlai"
+                  target="_blank"
+                >
+                  <span class="mdi mdi-alpha-d-circle" />
+                </IconButton>
+              </Tooltip>
+            </Toolbar>
+          </AppBar>
         </div>
       </Router>
     );
