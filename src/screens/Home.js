@@ -16,83 +16,87 @@ import mDashed from "../images/title-letters/mDashed.png";
 import nDashed from "../images/title-letters/nDashed.png";
 import apostropheDashed from "../images/title-letters/commaDashed.png";
 import Icon from "@material-ui/core/Icon";
+import { setInterval } from "timers";
 
 export class Home extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      letter: [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    };
+  }
+
+  componentDidMount() {
+    setInterval(() => this.changeLetter(), 1500);
+  }
+  changeLetter() {
+    let newArray = this.state.letter;
+    const index = Math.floor(Math.random() * 11),
+      index1 = Math.floor(Math.random() * 11),
+      index2 = Math.floor(Math.random() * 11);
+
+    newArray[index] = !newArray[index];
+    newArray[index1] = !newArray[index1];
+    newArray[index2] = !newArray[index2];
+    this.setState({ letter: newArray });
+  }
+
   render() {
     return (
-      <div style={{ height: "100%" }}>
+      <div
+        style={{
+          height: "80%",
+          display: "flex",
+
+          flexDirection: "column",
+          justifyContent: "center"
+        }}
+      >
         {/*how to keep words together if browser is smaller*/}
+
         <div
           align="middle"
           style={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "space-around",
+            flexWrap: "wrap"
           }}
         >
           <span className="image-word">
-            <img
-              src={h}
-              onMouseOver={e => (e.currentTarget.src = hDashed)}
-              onMouseOut={e => (e.currentTarget.src = h)}
-            />
+            <img src={this.state.letter[0] ? hDashed : h} />
 
-            <img
-              src={i}
-              onMouseOver={e => (e.currentTarget.src = iDashed)}
-              onMouseOut={e => (e.currentTarget.src = i)}
-            />
+            <img src={this.state.letter[1] ? iDashed : i} />
           </span>
           <span className="image-word">
-            <img
-              src={i}
-              onMouseOver={e => (e.currentTarget.src = iDashed)}
-              onMouseOut={e => (e.currentTarget.src = i)}
-            />
+            <img src={this.state.letter[2] ? iDashed : i} />
             <img
               className="apostrophe"
-              src={apostrophe}
-              onMouseOver={e => (e.currentTarget.src = apostropheDashed)}
-              onMouseOut={e => (e.currentTarget.src = apostrophe)}
+              src={this.state.letter[3] ? apostropheDashed : apostrophe}
             />
-            <img
-              src={m}
-              onMouseOver={e => (e.currentTarget.src = mDashed)}
-              onMouseOut={e => (e.currentTarget.src = m)}
-            />
+            <img src={this.state.letter[4] ? mDashed : m} />
           </span>
 
           <span className="image-word">
-            <img
-              src={m}
-              onMouseOver={e => (e.currentTarget.src = mDashed)}
-              onMouseOut={e => (e.currentTarget.src = m)}
-            />
-            <img
-              src={e}
-              onMouseOver={i => (i.currentTarget.src = eDashed)}
-              onMouseOut={i => (i.currentTarget.src = e)}
-            />
-            <img
-              src={a}
-              onMouseOver={e => (e.currentTarget.src = aDashed)}
-              onMouseOut={e => (e.currentTarget.src = a)}
-            />
-            <img
-              src={g}
-              onMouseOver={e => (e.currentTarget.src = gDashed)}
-              onMouseOut={e => (e.currentTarget.src = g)}
-            />
-            <img
-              src={a}
-              onMouseOver={e => (e.currentTarget.src = aDashed)}
-              onMouseOut={e => (e.currentTarget.src = a)}
-            />
-            <img
-              src={n}
-              onMouseOver={e => (e.currentTarget.src = nDashed)}
-              onMouseOut={e => (e.currentTarget.src = n)}
-            />
+            <img src={this.state.letter[5] ? mDashed : m} />
+            <img src={this.state.letter[6] ? eDashed : e} />
+            <img src={this.state.letter[7] ? aDashed : a} />
+            <img src={this.state.letter[8] ? gDashed : g} />
+            <img src={this.state.letter[9] ? aDashed : a} />
+            <img src={this.state.letter[10] ? nDashed : n} />
           </span>
         </div>
         <div
@@ -105,6 +109,7 @@ export class Home extends React.Component {
         >
           Front-End Developer | Aspiring Entrepreneur
         </div>
+
         <div
           align="middle"
           style={{
