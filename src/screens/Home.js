@@ -44,13 +44,12 @@ export class Home extends React.Component {
   }
   changeLetter() {
     let newArray = this.state.letter;
-    const index = Math.floor(Math.random() * 11),
-      index1 = Math.floor(Math.random() * 11),
-      index2 = Math.floor(Math.random() * 11);
+    let count = Math.floor(Math.random() * 8);
+    for (let i = 0; i < count; i++) {
+      const index = Math.floor(Math.random() * 11);
+      newArray[index] = !newArray[index];
+    }
 
-    newArray[index] = !newArray[index];
-    newArray[index1] = !newArray[index1];
-    newArray[index2] = !newArray[index2];
     this.setState({ letter: newArray });
   }
 
