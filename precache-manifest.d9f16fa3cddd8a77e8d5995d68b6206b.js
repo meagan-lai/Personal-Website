@@ -8,6 +8,10 @@ self.__precacheManifest = [
     "url": "./static/media/sustainify.52ebd4bb.png"
   },
   {
+    "revision": "cf9cb54bf4211e8917a049282252d365",
+    "url": "./static/media/profile.cf9cb54b.jpg"
+  },
+  {
     "revision": "ff669bae159a9a91682147047880be4e",
     "url": "./static/media/duhighApp.ff669bae.png"
   },
@@ -20,19 +24,19 @@ self.__precacheManifest = [
     "url": "./static/js/runtime~main.2c977d9b.js"
   },
   {
-    "revision": "47404ae3c27afac1e0de",
-    "url": "./static/js/main.ffac5cb7.chunk.js"
+    "revision": "0bc6a1b155d2d7f64943",
+    "url": "./static/js/main.b23781d6.chunk.js"
   },
   {
-    "revision": "50f1ccb43efea69694cb",
-    "url": "./static/js/2.900ffe7a.chunk.js"
+    "revision": "9f9a56649a837723b320",
+    "url": "./static/js/2.a509d4c8.chunk.js"
   },
   {
-    "revision": "47404ae3c27afac1e0de",
-    "url": "./static/css/main.68d61165.chunk.css"
+    "revision": "0bc6a1b155d2d7f64943",
+    "url": "./static/css/main.35612c3e.chunk.css"
   },
   {
-    "revision": "7a83d2067637b4e94a507cb339a8e70c",
+    "revision": "9075b3f69d79bf87082933f43db3480d",
     "url": "./index.html"
   }
 ];
