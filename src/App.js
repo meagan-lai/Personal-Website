@@ -13,8 +13,6 @@ import onWorkplay from "./images/menu/workplayOnHover.png";
 import Home from "./screens/Home";
 import About from "./screens/About";
 import Projects from "./screens/Projects";
-import IconButton from "@material-ui/core/IconButton";
-import Tooltip from "@material-ui/core/Tooltip";
 
 class App extends Component {
   constructor(props) {
@@ -39,10 +37,11 @@ class App extends Component {
             position="static"
             style={{
               marginTop: 15,
-              background: "transparent",
+              background: "#F9C333",
               boxShadow: "none",
               display: "flex",
-              flexDirection: "row-reverse"
+              flexDirection: "row-reverse",
+              marginBottom: 50
             }}
           >
             <Toolbar>
@@ -107,57 +106,6 @@ class App extends Component {
           <Route path="/about" component={About} />
 
           <Route path="/workplay" component={Projects} />
-          <AppBar
-            style={{
-              top: "auto",
-              bottom: 10,
-              background: "transparent",
-              boxShadow: "none",
-              position: "absolute"
-            }}
-          >
-            <Toolbar
-              style={{
-                margin: 10,
-                paddingBottom: 50,
-                alignItems: "center",
-                justifyContent: "center"
-              }}
-            >
-              <Tooltip title="MeaganLai@hotmail.com" placement="bottom">
-                <IconButton color="inherit" href="mailto:meaganlai@hotmail.com">
-                  <span class="mdi mdi-email-outline" />
-                </IconButton>
-              </Tooltip>
-              <Tooltip title="Linkedin" placement="bottom">
-                <IconButton
-                  color="inherit"
-                  href="https://www.linkedin.com/in/meagan-lai-600822131/"
-                  target="_blank"
-                >
-                  <span class="mdi mdi-linkedin" />
-                </IconButton>
-              </Tooltip>
-              <Tooltip title="GitHub" placement="bottom">
-                <IconButton
-                  color="inherit"
-                  href="https://github.com/meagan-lai"
-                  target="_blank"
-                >
-                  <span class="mdi mdi-github-circle" />
-                </IconButton>
-              </Tooltip>
-              <Tooltip title="Devpost" placement="bottom">
-                <IconButton
-                  color="inherit"
-                  href="https://devpost.com/meaganlai"
-                  target="_blank"
-                >
-                  <span class="mdi mdi-alpha-d-circle" />
-                </IconButton>
-              </Tooltip>
-            </Toolbar>
-          </AppBar>
         </div>
       </Router>
     );

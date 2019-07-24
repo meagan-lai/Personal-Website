@@ -17,11 +17,11 @@ import nDashed from "../images/title-letters/nDashed.png";
 import apostropheDashed from "../images/title-letters/commaDashed.png";
 import Icon from "@material-ui/core/Icon";
 import { setInterval } from "timers";
+import BottomBar from "../components/BottomBar";
 
 export class Home extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       letter: [
         false,
@@ -59,28 +59,25 @@ export class Home extends React.Component {
         style={{
           height: "80%",
           display: "flex",
-
           flexDirection: "column",
-          justifyContent: "center"
+          justifyContent: "center",
+          backgroundColor: "#F9C333"
         }}
       >
-        {/*how to keep words together if browser is smaller*/}
-
         <div
-          align="middle"
           style={{
             display: "flex",
-            alignItems: "center",
-            justifyContent: "space-around",
-            flexWrap: "wrap"
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "center"
           }}
         >
-          <span className="image-word">
+          <span className="image-word" style={{ marginRight: 35 }}>
             <img src={this.state.letter[0] ? hDashed : h} />
 
             <img src={this.state.letter[1] ? iDashed : i} />
           </span>
-          <span className="image-word">
+          <span className="image-word" style={{ marginRight: 35 }}>
             <img src={this.state.letter[2] ? iDashed : i} />
             <img
               className="apostrophe"
@@ -98,6 +95,7 @@ export class Home extends React.Component {
             <img src={this.state.letter[10] ? nDashed : n} />
           </span>
         </div>
+
         <div
           style={{
             fontFamily: "MyFont",
@@ -133,6 +131,7 @@ export class Home extends React.Component {
             <span class=" mdi mdi-language-css3" />
           </Icon>
         </div>
+        <BottomBar />
       </div>
     );
   }

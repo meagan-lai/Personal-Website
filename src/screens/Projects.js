@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 
 import ProjectCard from "../components/ProjectCard";
-
+import BottomBar from "../components/BottomBar";
 import sustainify from "../images/sustainify.png";
 import sustainifyApp from "../images/sustainifyApp.png";
 import duhighApp from "../images/duhighApp.png";
@@ -51,6 +51,7 @@ function Projects(props) {
           githubLink="https://github.com/meagan-lai/DUHigh"
         />
       </div>
+      <BottomBar />
     </div>
   );
 }

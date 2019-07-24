@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
-
+import profile from "../images/profile.jpg";
+import BottomBar from "../components/BottomBar";
 import Button from "@material-ui/core/Button";
 
 const styles = theme => ({
@@ -11,16 +12,23 @@ const styles = theme => ({
     paddingLeft: 4,
     fontSize: 17,
     color: "white",
-    textAlign: "center"
+    textAlign: "left"
   },
   title: {
     position: "relative",
     fontSize: 30,
     color: "white",
-    marginTop: -7,
+    marginTop: 10,
     lineHeight: 1,
     paddingLeft: 4,
-    textAlign: "center"
+    textAlign: "left"
+  },
+  button: {
+    paddingTop: 10,
+    paddingBottom: 10,
+    paddingLeft: 34,
+    paddingRight: 34,
+    borderRadius: 300
   }
 });
 
@@ -28,21 +36,39 @@ function About(props) {
   const { classes } = props;
   return (
     <div>
-      <p className={classes.title}>Hey, I'm Meagan</p>
-      <div className={classes.root}>
-        <p>
-          I'm a front-end developer currently based in Waterloo. I'm currently
-          working for Information Systems and Technology (IST) at the University
-          of Waterloo.
-        </p>
-        <p>
-          I love meeting new people - contact me if you like to chat over coffee
-          or bubble tea!
-        </p>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          paddingLeft: "10vw",
+          paddingRight: "10vw"
+        }}
+      >
+        <img
+          src={profile}
+          style={{ height: 482, paddingLeft: 17, paddingRight: 17 }}
+        />
+        <div style={{ paddingLeft: 17, paddingRight: 17 }}>
+          <text className={classes.title}>Hey, I'm Meagan</text>
+          <p className={classes.root}>
+            I'm a front-end developer currently based in Waterloo. I'm currently
+            working for Information Systems and Technology (IST) at the
+            University of Waterloo.
+          </p>
+          <p className={classes.root}>
+            I love meeting new people - contact me if you like to chat over
+            coffee or bubble tea!
+          </p>
+          <div style={{ padding: 17, textAlign: "center" }}>
+            <Button variant="contained" className={classes.button}>
+              Resumé
+            </Button>
+          </div>
+        </div>
       </div>
-      <Button variant="contained" className={classes.button}>
-        Resumé
-      </Button>
+
+      <BottomBar />
     </div>
   );
 }
