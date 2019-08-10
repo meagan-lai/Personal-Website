@@ -1,18 +1,19 @@
 {
-  "main.css": "./static/css/main.35612c3e.chunk.css",
-  "main.js": "./static/js/main.a87f7d27.chunk.js",
-  "main.js.map": "./static/js/main.a87f7d27.chunk.js.map",
+  "main.css": "./static/css/main.554ab8d1.chunk.css",
+  "main.js": "./static/js/main.6302a64b.chunk.js",
+  "main.js.map": "./static/js/main.6302a64b.chunk.js.map",
   "runtime~main.js": "./static/js/runtime~main.2c977d9b.js",
   "runtime~main.js.map": "./static/js/runtime~main.2c977d9b.js.map",
-  "static/js/2.a509d4c8.chunk.js": "./static/js/2.a509d4c8.chunk.js",
-  "static/js/2.a509d4c8.chunk.js.map": "./static/js/2.a509d4c8.chunk.js.map",
+  "static/js/2.595296d1.chunk.js": "./static/js/2.595296d1.chunk.js",
+  "static/js/2.595296d1.chunk.js.map": "./static/js/2.595296d1.chunk.js.map",
   "index.html": "./index.html",
-  "precache-manifest.147dec9c7739809f44a75cbead14e802.js": "./precache-manifest.147dec9c7739809f44a75cbead14e802.js",
+  "precache-manifest.c082e40bdcc9f0901c63a3cfbf2a56fc.js": "./precache-manifest.c082e40bdcc9f0901c63a3cfbf2a56fc.js",
   "service-worker.js": "./service-worker.js",
-  "static/css/main.35612c3e.chunk.css.map": "./static/css/main.35612c3e.chunk.css.map",
+  "static/css/main.554ab8d1.chunk.css.map": "./static/css/main.554ab8d1.chunk.css.map",
+  "static/media/Resume.pdf": "./static/media/Resume.6cc5d5bd.pdf",
   "static/media/index.css": "./static/media/adamfont-webfont.5b903dbe.woff",
   "static/media/duhighApp.png": "./static/media/duhighApp.ff669bae.png",
-  "static/media/newsustainify.png": "./static/media/newsustainify.794ed599.png",
+  "static/media/newsustainify.png": "./static/media/newsustainify.b045ef7d.png",
   "static/media/profile.jpg": "./static/media/profile.cf9cb54b.jpg",
-  "static/media/sustainifyApp.png": "./static/media/sustainifyApp.2b153795.png"
+  "static/media/readingbuddy.png": "./static/media/readingbuddy.ca1b1ddf.png"
 }
