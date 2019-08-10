@@ -4,8 +4,8 @@ import { withStyles } from "@material-ui/core/styles";
 
 import ProjectCard from "../components/ProjectCard";
 import BottomBar from "../components/BottomBar";
-import sustainify from "../images/sustainify.png";
-import sustainifyApp from "../images/sustainifyApp.png";
+import sustainify from "../images/newsustainify.png";
+import readingbuddy from "../images/readingbuddy.png";
 import duhighApp from "../images/duhighApp.png";
 
 const styles = {
@@ -36,8 +36,8 @@ function Projects(props) {
           githubLink="https://github.com/meagan-lai/Sustainify"
         />
         <ProjectCard
-          projectImage={sustainifyApp}
-          projectName="SpeakRead"
+          projectImage={readingbuddy}
+          projectName="Reading Buddy"
           projectDescription="Web application to allow kids to learn to read and speak correctly through real-time speech recognition and natural language processing ."
           githubLink="https://github.com/meagan-lai/SpeakRead"
         />

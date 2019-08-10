@@ -4,6 +4,7 @@ import { withStyles } from "@material-ui/core/styles";
 import profile from "../images/profile.jpg";
 import BottomBar from "../components/BottomBar";
 import Button from "@material-ui/core/Button";
+import pdf from "../images/Resume.pdf";
 
 const styles = theme => ({
   root: {
@@ -61,7 +62,12 @@ function About(props) {
             coffee or bubble tea!
           </p>
           <div style={{ padding: 17, textAlign: "center" }}>
-            <Button variant="contained" className={classes.button}>
+            <Button
+              variant="contained"
+              className={classes.button}
+              href={pdf}
+              target="_blank"
+            >
               Resumé
             </Button>
           </div>
