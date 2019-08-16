@@ -1,13 +1,13 @@
 {
   "main.css": "./static/css/main.6ebd88d9.chunk.css",
-  "main.js": "./static/js/main.f69344ce.chunk.js",
-  "main.js.map": "./static/js/main.f69344ce.chunk.js.map",
+  "main.js": "./static/js/main.4e21ede6.chunk.js",
+  "main.js.map": "./static/js/main.4e21ede6.chunk.js.map",
   "runtime~main.js": "./static/js/runtime~main.2c977d9b.js",
   "runtime~main.js.map": "./static/js/runtime~main.2c977d9b.js.map",
-  "static/js/2.32994105.chunk.js": "./static/js/2.32994105.chunk.js",
-  "static/js/2.32994105.chunk.js.map": "./static/js/2.32994105.chunk.js.map",
+  "static/js/2.fb81fe61.chunk.js": "./static/js/2.fb81fe61.chunk.js",
+  "static/js/2.fb81fe61.chunk.js.map": "./static/js/2.fb81fe61.chunk.js.map",
   "index.html": "./index.html",
-  "precache-manifest.dddc76441c82285a76e1c2d9afcae4bc.js": "./precache-manifest.dddc76441c82285a76e1c2d9afcae4bc.js",
+  "precache-manifest.1a9cb1a24c7937ce3c72ecc4b722230b.js": "./precache-manifest.1a9cb1a24c7937ce3c72ecc4b722230b.js",
   "service-worker.js": "./service-worker.js",
   "static/css/main.6ebd88d9.chunk.css.map": "./static/css/main.6ebd88d9.chunk.css.map",
   "static/media/Resume.pdf": "./static/media/Resume.6b75f34d.pdf",
@@ -15,5 +15,6 @@
   "static/media/duhighApp.png": "./static/media/duhighApp.ff669bae.png",
   "static/media/newsustainify.png": "./static/media/newsustainify.b045ef7d.png",
   "static/media/profile.jpg": "./static/media/profile.cf9cb54b.jpg",
-  "static/media/readingbuddy.png": "./static/media/readingbuddy.ca1b1ddf.png"
+  "static/media/readingbuddy.png": "./static/media/readingbuddy.ca1b1ddf.png",
+  "static/media/wave.png": "./static/media/wave.8e411e68.png"
 }
