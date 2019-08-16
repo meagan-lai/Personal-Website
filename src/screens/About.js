@@ -25,7 +25,7 @@ const styles = theme => ({
     position: "relative",
     paddingTop: 10,
     paddingLeft: 4,
-    fontSize: 17,
+    fontSize: 16,
     color: "#332f2f",
     textAlign: "left",
     fontFamily: ["Karla", "sans-serif"]
@@ -60,14 +60,30 @@ function About(props) {
           flexDirection: "row",
           justifyContent: "center",
           paddingLeft: "10vw",
-          paddingRight: "10vw"
+          paddingRight: "10vw",
+          flexWrap: "wrap",
+          width: "80%"
         }}
       >
         <img
           src={profile}
-          style={{ height: 482, paddingLeft: 17, paddingRight: 17 }}
+          style={{
+            paddingLeft: 17,
+            paddingRight: 17,
+            display: "flex",
+            height: 482
+          }}
         />
-        <div style={{ paddingLeft: 17, paddingRight: 17, width: "40%" }}>
+        <div
+          style={{
+            paddingLeft: 17,
+            paddingRight: 17,
+            width: "40%",
+            display: "flex",
+            flexDirection: "column",
+            flexGrow: 2
+          }}
+        >
           <text className={classes.title}>
             {" "}
             <img src={wave} style={{ height: 40, color: "white" }} />
