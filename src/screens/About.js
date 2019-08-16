@@ -76,9 +76,7 @@ function About(props) {
         />
         <div
           style={{
-            paddingLeft: 17,
-            paddingRight: 17,
-            width: 500,
+            width: 600,
             display: "flex",
             flexDirection: "column",
             flexWrap: "wrap"

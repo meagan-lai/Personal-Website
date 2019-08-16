@@ -13,6 +13,18 @@ import onWorkplay from "./images/menu/workplayOnHover.png";
 import Home from "./screens/Home";
 import About from "./screens/About";
 import Projects from "./screens/Projects";
+import Typography from "@material-ui/core/Typography";
+
+const onMouseOver = event => {
+  const el = event.target;
+  let mouseOverOpacity = 0.5;
+  el.style.opacity = mouseOverOpacity;
+};
+const onMouseOut = event => {
+  const el = event.target;
+  let mouseOutOpacity = 1;
+  el.style.opacity = mouseOutOpacity;
+};
 
 class App extends Component {
   constructor(props) {
@@ -56,11 +68,18 @@ class App extends Component {
                 }}
                 className={this.state.activeBtn === "Home" ? "active" : null}
               >
-                <img
-                  src={home}
-                  onMouseOver={e => (e.currentTarget.src = onHome)}
-                  onMouseOut={e => (e.currentTarget.src = home)}
-                />
+                <Typography
+                  style={{
+                    fontFamily: ["Oswald", "sans-serif"],
+                    fontSize: 17,
+                    color: "white",
+                    fontWeight: 500
+                  }}
+                  onMouseOver={event => onMouseOver(event)}
+                  onMouseOut={event => onMouseOut(event)}
+                >
+                  HOME
+                </Typography>
               </Link>
               <img style={{ margin: 5 }} src={separator} />
               <Link
@@ -74,11 +93,18 @@ class App extends Component {
                 }}
                 className={this.state.activeBtn === "About" ? "active" : null}
               >
-                <img
-                  src={about}
-                  onMouseOver={e => (e.currentTarget.src = onAbout)}
-                  onMouseOut={e => (e.currentTarget.src = about)}
-                />
+                <Typography
+                  style={{
+                    fontFamily: ["Oswald", "sans-serif"],
+                    fontSize: 17,
+                    color: "white",
+                    fontWeight: 500
+                  }}
+                  onMouseOver={event => onMouseOver(event)}
+                  onMouseOut={event => onMouseOut(event)}
+                >
+                  ABOUT
+                </Typography>
               </Link>
               <img style={{ margin: 5 }} src={separator} />
               <Link
@@ -94,11 +120,18 @@ class App extends Component {
                   this.state.activeBtn === "Projects" ? "active" : null
                 }
               >
-                <img
-                  src={workplay}
-                  onMouseOver={e => (e.currentTarget.src = onWorkplay)}
-                  onMouseOut={e => (e.currentTarget.src = workplay)}
-                />
+                <Typography
+                  style={{
+                    fontFamily: ["Oswald", "sans-serif"],
+                    fontSize: 17,
+                    color: "white",
+                    fontWeight: 500
+                  }}
+                  onMouseOver={event => onMouseOver(event)}
+                  onMouseOut={event => onMouseOut(event)}
+                >
+                  WORK & PLAY
+                </Typography>
               </Link>
             </Toolbar>
           </AppBar>
