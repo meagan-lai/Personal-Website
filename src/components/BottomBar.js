@@ -11,10 +11,13 @@ export default class BottomBar extends Component {
       <div
         align="middle"
         style={{
+          position: "static",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          margin: 30
+          margin: "3.5%",
+          bottom: 20,
+          justifySelf: "center"
         }}
       >
         <Tooltip title="MeaganLai@hotmail.com" placement="bottom">

@@ -1,26 +1,39 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
+import {
+  withStyles,
+  MuiThemeProvider,
+  createMuiTheme
+} from "@material-ui/core/styles";
 import profile from "../images/profile.jpg";
 import BottomBar from "../components/BottomBar";
 import Button from "@material-ui/core/Button";
 import pdf from "../images/Resume.pdf";
 import Typography from "@material-ui/core/Typography";
+import wave from "../images/wave.png";
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#55C6C6"
+    }
+  }
+});
 
 const styles = theme => ({
   root: {
     position: "relative",
     paddingTop: 10,
     paddingLeft: 4,
-    fontSize: 18,
-    color: "white",
+    fontSize: 17,
+    color: "#332f2f",
     textAlign: "left",
     fontFamily: ["Karla", "sans-serif"]
   },
   title: {
     position: "relative",
     fontSize: 30,
-    color: "white",
+    color: "#332f2f",
     marginTop: 10,
     lineHeight: 1,
     paddingLeft: 4,
@@ -33,14 +46,14 @@ const styles = theme => ({
     paddingLeft: 34,
     paddingRight: 34,
     borderRadius: 300,
-    margin: 50
+    margin: 30
   }
 });
 
 function About(props) {
   const { classes } = props;
   return (
-    <div>
+    <MuiThemeProvider theme={theme}>
       <div
         style={{
           display: "flex",
@@ -54,12 +67,29 @@ function About(props) {
           src={profile}
           style={{ height: 482, paddingLeft: 17, paddingRight: 17 }}
         />
-        <div style={{ paddingLeft: 17, paddingRight: 17 }}>
-          <text className={classes.title}>Hey, I'm Meagan</text>
+        <div style={{ paddingLeft: 17, paddingRight: 17, width: "40%" }}>
+          <text className={classes.title}>
+            {" "}
+            <img src={wave} style={{ height: 40, color: "white" }} />
+            Hey, I'm Meagan
+          </text>
           <p className={classes.root}>
-            I'm a front-end developer currently based in Waterloo. I'm currently
+            I'm a front-end developer based in Waterloo and I'm currently
             working for Information Systems and Technology (IST) at the
             University of Waterloo.
+          </p>
+          <p className={classes.root}>
+            I love what I do, because software development combines my three
+            biggest passions in life:{" "}
+            <text style={{ fontWeight: "bold" }}>Problem Solving</text>,{" "}
+            <text style={{ fontWeight: "bold" }}>Learning</text>, and{" "}
+            <text style={{ fontWeight: "bold" }}>Creativity</text>
+          </p>
+
+          <p className={classes.root}>
+            When I'm not developing software, you can find me learning about new
+            technologies, attending hacking competitions, weightlifting, and
+            playing boardgames with my friends.
           </p>
           <p className={classes.root}>
             I love meeting new people - contact me if you like to chat over
@@ -67,17 +97,17 @@ function About(props) {
           </p>
           <div style={{ padding: 17, textAlign: "center" }}>
             <Button
+              color="primary"
               variant="contained"
               className={classes.button}
               href={pdf}
               target="_blank"
             >
               <Typography
-                variant="button"
                 style={{
-                  color: "#515151",
+                  color: "white",
                   fontFamily: ["Open Sans", "sans-serif"],
-                  fontWeight: "bold",
+                  fontWeight: 800,
                   fontSize: 13
                 }}
               >
@@ -89,7 +119,7 @@ function About(props) {
       </div>
 
       <BottomBar />
-    </div>
+    </MuiThemeProvider>
   );
 }
 
