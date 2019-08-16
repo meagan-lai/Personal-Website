@@ -40,6 +40,7 @@ function Projects(props) {
           projectName="Reading Buddy"
           projectDescription="Web application to allow kids to learn to read and speak correctly through real-time speech recognition and natural language processing ."
           githubLink="https://github.com/meagan-lai/Reading-Buddy"
+          siteLink="https://meagan-lai.github.io/Reading-Buddy/"
         />
         <ProjectCard
           projectImage={duhighApp}

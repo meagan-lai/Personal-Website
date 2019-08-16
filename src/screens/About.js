@@ -78,10 +78,10 @@ function About(props) {
           style={{
             paddingLeft: 17,
             paddingRight: 17,
-            width: "40%",
+            width: 500,
             display: "flex",
             flexDirection: "column",
-            flexGrow: 2
+            flexWrap: "wrap"
           }}
         >
           <text className={classes.title}>

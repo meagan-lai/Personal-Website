@@ -7,6 +7,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import Tooltip from "@material-ui/core/Tooltip";
+import launch from "../images/launch.png";
+import Button from "@material-ui/core/Button";
 
 const styles = {
   card: {
@@ -49,7 +51,6 @@ export default class ProjectCard extends Component {
               </IconButton>
             </Tooltip>
           ) : null}
-
           <Tooltip title="GitHub" placement="bottom">
             <IconButton
               color="#CCCCCC"
@@ -62,6 +63,17 @@ export default class ProjectCard extends Component {
               />
             </IconButton>
           </Tooltip>
+          {this.props.siteLink ? (
+            <Tooltip title="Launch" placement="bottom">
+              <Button
+                href={this.props.siteLink}
+                target="_blank"
+                style={{ marginLeft: "auto" }}
+              >
+                <img src={launch} style={{ height: 27 }} />
+              </Button>
+            </Tooltip>
+          ) : null}
         </CardActions>
       </Card>
     );
