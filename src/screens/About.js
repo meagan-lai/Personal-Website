@@ -5,15 +5,17 @@ import profile from "../images/profile.jpg";
 import BottomBar from "../components/BottomBar";
 import Button from "@material-ui/core/Button";
 import pdf from "../images/Resume.pdf";
+import Typography from "@material-ui/core/Typography";
 
 const styles = theme => ({
   root: {
     position: "relative",
     paddingTop: 10,
     paddingLeft: 4,
-    fontSize: 17,
+    fontSize: 18,
     color: "white",
-    textAlign: "left"
+    textAlign: "left",
+    fontFamily: ["Karla", "sans-serif"]
   },
   title: {
     position: "relative",
@@ -22,14 +24,16 @@ const styles = theme => ({
     marginTop: 10,
     lineHeight: 1,
     paddingLeft: 4,
-    textAlign: "left"
+    textAlign: "left",
+    fontFamily: ["Open Sans", "sans-serif"]
   },
   button: {
     paddingTop: 10,
     paddingBottom: 10,
     paddingLeft: 34,
     paddingRight: 34,
-    borderRadius: 300
+    borderRadius: 300,
+    margin: 50
   }
 });
 
@@ -68,7 +72,17 @@ function About(props) {
               href={pdf}
               target="_blank"
             >
-              Resumé
+              <Typography
+                variant="button"
+                style={{
+                  color: "#515151",
+                  fontFamily: ["Open Sans", "sans-serif"],
+                  fontWeight: "bold",
+                  fontSize: 13
+                }}
+              >
+                R é s u m é
+              </Typography>
             </Button>
           </div>
         </div>
