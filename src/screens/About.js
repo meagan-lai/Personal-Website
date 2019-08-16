@@ -35,7 +35,8 @@ const styles = theme => ({
     color: "#332f2f",
     lineHeight: 1,
     paddingLeft: 4,
-    textAlign: "left"
+    textAlign: "left",
+    marginTop: 20
   },
   button: {
     paddingTop: 10,
