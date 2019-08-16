@@ -100,7 +100,7 @@ export class Home extends React.Component {
 
           <div
             style={{
-              fontFamily: "MyFont",
+              fontFamily: ["Saira Extra Condensed", "sans-serif"],
               fontSize: 30,
               color: "#605f5f",
               textAlign: "center"

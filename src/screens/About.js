@@ -25,20 +25,17 @@ const styles = theme => ({
     position: "relative",
     paddingTop: 10,
     paddingLeft: 4,
-    fontSize: 16,
+    fontSize: 15,
     color: "#332f2f",
-    textAlign: "left",
-    fontFamily: ["Karla", "sans-serif"]
+    textAlign: "left"
   },
   title: {
     position: "relative",
     fontSize: 30,
     color: "#332f2f",
-    marginTop: 10,
     lineHeight: 1,
     paddingLeft: 4,
-    textAlign: "left",
-    fontFamily: ["Open Sans", "sans-serif"]
+    textAlign: "left"
   },
   button: {
     paddingTop: 10,
@@ -59,8 +56,8 @@ function About(props) {
           display: "flex",
           flexDirection: "row",
           justifyContent: "center",
-          paddingLeft: "10vw",
-          paddingRight: "10vw",
+          paddingLeft: "10%",
+          paddingRight: "10%",
           flexWrap: "wrap",
           width: "80%"
         }}
@@ -76,40 +73,43 @@ function About(props) {
         />
         <div
           style={{
-            width: 600,
+            width: 450,
             display: "flex",
             flexDirection: "column",
             flexWrap: "wrap"
           }}
         >
-          <text className={classes.title}>
+          <Typography variant="h5" className={classes.title}>
             {" "}
             <img src={wave} style={{ height: 40, color: "white" }} />
             Hey, I'm Meagan
-          </text>
-          <p className={classes.root}>
+          </Typography>
+          <p style={{ fontSize: 12 }} />
+          <Typography className={classes.root}>
             I'm a front-end developer based in Waterloo and I'm currently
             working for Information Systems and Technology (IST) at the
             University of Waterloo.
-          </p>
-          <p className={classes.root}>
+          </Typography>
+          <p style={{ fontSize: 10 }} />
+          <Typography className={classes.root}>
             I love what I do, because software development combines my three
             biggest passions in life:{" "}
             <text style={{ fontWeight: "bold" }}>Problem Solving</text>,{" "}
             <text style={{ fontWeight: "bold" }}>Learning</text>, and{" "}
             <text style={{ fontWeight: "bold" }}>Creativity</text>
-          </p>
-
-          <p className={classes.root}>
+          </Typography>
+          <p style={{ fontSize: 10 }} />
+          <Typography className={classes.root}>
             When I'm not developing software, you can find me learning about new
             technologies, attending hacking competitions, weightlifting, and
             playing boardgames with my friends.
-          </p>
-          <p className={classes.root}>
+          </Typography>
+          <p style={{ fontSize: 10 }} />
+          <Typography className={classes.root}>
             I love meeting new people - contact me if you like to chat over
             coffee or bubble tea!
-          </p>
-          <div style={{ padding: 17, textAlign: "center" }}>
+          </Typography>
+          <div style={{ margin: 20, textAlign: "center" }}>
             <Button
               color="primary"
               variant="contained"

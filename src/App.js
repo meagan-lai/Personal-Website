@@ -71,7 +71,7 @@ class App extends Component {
                 <Typography
                   style={{
                     fontFamily: ["Oswald", "sans-serif"],
-                    fontSize: 17,
+                    fontSize: 16,
                     color: "white",
                     fontWeight: 500
                   }}
@@ -96,7 +96,7 @@ class App extends Component {
                 <Typography
                   style={{
                     fontFamily: ["Oswald", "sans-serif"],
-                    fontSize: 17,
+                    fontSize: 16,
                     color: "white",
                     fontWeight: 500
                   }}
@@ -123,7 +123,7 @@ class App extends Component {
                 <Typography
                   style={{
                     fontFamily: ["Oswald", "sans-serif"],
-                    fontSize: 17,
+                    fontSize: 16,
                     color: "white",
                     fontWeight: 500
                   }}
