@@ -64,7 +64,8 @@ class App extends Component {
                   height: 40,
                   display: "flex",
                   flexDirection: "column",
-                  justifyContent: "center"
+                  justifyContent: "center",
+                  textDecoration: "none"
                 }}
                 className={this.state.activeBtn === "Home" ? "active" : null}
               >
@@ -89,7 +90,8 @@ class App extends Component {
                   height: 40,
                   display: "flex",
                   flexDirection: "column",
-                  justifyContent: "center"
+                  justifyContent: "center",
+                  textDecoration: "none"
                 }}
                 className={this.state.activeBtn === "About" ? "active" : null}
               >
@@ -114,7 +116,8 @@ class App extends Component {
                   height: 40,
                   display: "flex",
                   flexDirection: "column",
-                  justifyContent: "center"
+                  justifyContent: "center",
+                  textDecoration: "none"
                 }}
                 className={
                   this.state.activeBtn === "Projects" ? "active" : null
