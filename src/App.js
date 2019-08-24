@@ -49,7 +49,7 @@ class App extends Component {
             position="static"
             style={{
               marginTop: 15,
-              background: "#F9C333",
+              background: "transparent",
               boxShadow: "none",
               display: "flex",
               flexDirection: "row-reverse",

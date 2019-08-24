@@ -26,13 +26,13 @@ const styles = theme => ({
     paddingTop: 10,
     paddingLeft: 4,
     fontSize: 15,
-    color: "#332f2f",
+    color: "white",
     textAlign: "left"
   },
   title: {
     position: "relative",
     fontSize: 30,
-    color: "#332f2f",
+    color: "white",
     lineHeight: 1,
     paddingLeft: 4,
     textAlign: "left",

@@ -23,7 +23,8 @@ function Projects(props) {
           display: "flex",
           flexDirection: "row",
           flexWrap: "wrap",
-          justifyContent: "space-around"
+          justifyContent: "space-around",
+          marginBottom: "3.85%"
         }}
       >
         <ProjectCard

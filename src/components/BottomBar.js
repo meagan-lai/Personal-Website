@@ -15,8 +15,7 @@ export default class BottomBar extends Component {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          margin: "3.5%",
-          bottom: 20,
+          marginTop: "2.5%",
           justifySelf: "center"
         }}
       >

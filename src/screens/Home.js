@@ -62,8 +62,7 @@ export class Home extends React.Component {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-            backgroundColor: "#F9C333",
-            margin: "11.5%"
+            margin: "11.20%"
           }}
         >
           <div

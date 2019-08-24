@@ -3,6 +3,7 @@ html,
 body {
   height: 100%;
   background-color: #f9c333;
+  background-image: url(./images/grain.png);
 }
 #root {
   height: 100%;
@@ -46,8 +47,12 @@ a:before {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #f9c333;
+  background-color: trans;
   margin: -19px 0 0 0;
+}
+
+.abouttheme {
+  background-color: #333333;
 }
 
 /* id is # */
