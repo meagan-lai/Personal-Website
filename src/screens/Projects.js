@@ -17,43 +17,39 @@ const styles = {
 function Projects(props) {
   const { classes } = props;
   return (
-    <div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          justifyContent: "space-around",
-          marginBottom: "3.85%"
-        }}
-      >
-        <ProjectCard
-          projectImage={sustainify}
-          projectName="Sustainify"
-          projectDescription="Mobile application allowing you to scan your waste materials and
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        flexWrap: "wrap",
+        justifyContent: "space-around"
+      }}
+    >
+      <ProjectCard
+        projectImage={sustainify}
+        projectName="Sustainify"
+        projectDescription="Mobile application allowing you to scan your waste materials and
         provides users instructions on how and where to properly dispose it. Placed
         1st at HackNYU."
-          devpostLink="https://devpost.com/software/sustainify"
-          githubLink="https://github.com/meagan-lai/Sustainify"
-        />
-        <ProjectCard
-          projectImage={readingbuddy}
-          projectName="Reading Buddy"
-          projectDescription="Web application to help kids learn to read and speak correctly through real-time speech recognition and natural language processing ."
-          githubLink="https://github.com/meagan-lai/Reading-Buddy"
-          siteLink="https://meagan-lai.github.io/Reading-Buddy/"
-        />
-        <ProjectCard
-          projectImage={duhighApp}
-          projectName="D.U.High"
-          projectDescription="A law enforcement tool which uses AI combined with standard road
+        devpostLink="https://devpost.com/software/sustainify"
+        githubLink="https://github.com/meagan-lai/Sustainify"
+      />
+      <ProjectCard
+        projectImage={readingbuddy}
+        projectName="Reading Buddy"
+        projectDescription="Web application to help kids learn to read and speak correctly through real-time speech recognition and natural language processing ."
+        githubLink="https://github.com/meagan-lai/Reading-Buddy"
+        siteLink="https://meagan-lai.github.io/Reading-Buddy/"
+      />
+      <ProjectCard
+        projectImage={duhighApp}
+        projectName="D.U.High"
+        projectDescription="A law enforcement tool which uses AI combined with standard road
         side testing to predict whether the subject is intoxicated or
         sober."
-          devpostLink="https://devpost.com/software/d-u-high"
-          githubLink="https://github.com/meagan-lai/DUHigh"
-        />
-      </div>
-      <BottomBar />
+        devpostLink="https://devpost.com/software/d-u-high"
+        githubLink="https://github.com/meagan-lai/DUHigh"
+      />
     </div>
   );
 }

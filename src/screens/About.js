@@ -44,7 +44,7 @@ const styles = theme => ({
     paddingLeft: 34,
     paddingRight: 34,
     borderRadius: 300,
-    margin: 30
+    margin: 20
   }
 });
 
@@ -132,8 +132,6 @@ function About(props) {
           </div>
         </div>
       </div>
-
-      <BottomBar />
     </MuiThemeProvider>
   );
 }

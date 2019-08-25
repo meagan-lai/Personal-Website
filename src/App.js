@@ -14,6 +14,7 @@ import Home from "./screens/Home";
 import About from "./screens/About";
 import Projects from "./screens/Projects";
 import Typography from "@material-ui/core/Typography";
+import BottomBar from "./components/BottomBar";
 
 const onMouseOver = event => {
   const el = event.target;
@@ -43,107 +44,110 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
-        <div className="app-container">
-          <AppBar
-            position="static"
-            style={{
-              marginTop: 15,
-              background: "transparent",
-              boxShadow: "none",
-              display: "flex",
-              flexDirection: "row-reverse",
-              marginBottom: 50
-            }}
-          >
-            <Toolbar>
-              <Link
-                to="/"
-                onClick={() => this.goTo("Home")}
-                style={{
-                  height: 40,
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  textDecoration: "none"
-                }}
-                className={this.state.activeBtn === "Home" ? "active" : null}
-              >
-                <Typography
+      <div>
+        <Router>
+          <div className="app-container">
+            <AppBar
+              position="static"
+              style={{
+                marginTop: 15,
+                background: "transparent",
+                boxShadow: "none",
+                display: "flex",
+                flexDirection: "row-reverse",
+                marginBottom: 50
+              }}
+            >
+              <Toolbar>
+                <Link
+                  to="/"
+                  onClick={() => this.goTo("Home")}
                   style={{
-                    fontFamily: ["Oswald", "sans-serif"],
-                    fontSize: 16,
-                    color: "white",
-                    fontWeight: 500
+                    height: 40,
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    textDecoration: "none"
                   }}
-                  onMouseOver={event => onMouseOver(event)}
-                  onMouseOut={event => onMouseOut(event)}
+                  className={this.state.activeBtn === "Home" ? "active" : null}
                 >
-                  HOME
-                </Typography>
-              </Link>
-              <img style={{ margin: 5 }} src={separator} />
-              <Link
-                to="/about"
-                onClick={() => this.goTo("About")}
-                style={{
-                  height: 40,
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  textDecoration: "none"
-                }}
-                className={this.state.activeBtn === "About" ? "active" : null}
-              >
-                <Typography
+                  <Typography
+                    style={{
+                      fontFamily: ["Oswald", "sans-serif"],
+                      fontSize: 16,
+                      color: "white",
+                      fontWeight: 500
+                    }}
+                    onMouseOver={event => onMouseOver(event)}
+                    onMouseOut={event => onMouseOut(event)}
+                  >
+                    HOME
+                  </Typography>
+                </Link>
+                <img style={{ margin: 5 }} src={separator} />
+                <Link
+                  to="/about"
+                  onClick={() => this.goTo("About")}
                   style={{
-                    fontFamily: ["Oswald", "sans-serif"],
-                    fontSize: 16,
-                    color: "white",
-                    fontWeight: 500
+                    height: 40,
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    textDecoration: "none"
                   }}
-                  onMouseOver={event => onMouseOver(event)}
-                  onMouseOut={event => onMouseOut(event)}
+                  className={this.state.activeBtn === "About" ? "active" : null}
                 >
-                  ABOUT
-                </Typography>
-              </Link>
-              <img style={{ margin: 5 }} src={separator} />
-              <Link
-                to="/workplay"
-                onClick={() => this.goTo("Projects")}
-                style={{
-                  height: 40,
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  textDecoration: "none"
-                }}
-                className={
-                  this.state.activeBtn === "Projects" ? "active" : null
-                }
-              >
-                <Typography
+                  <Typography
+                    style={{
+                      fontFamily: ["Oswald", "sans-serif"],
+                      fontSize: 16,
+                      color: "white",
+                      fontWeight: 500
+                    }}
+                    onMouseOver={event => onMouseOver(event)}
+                    onMouseOut={event => onMouseOut(event)}
+                  >
+                    ABOUT
+                  </Typography>
+                </Link>
+                <img style={{ margin: 5 }} src={separator} />
+                <Link
+                  to="/workplay"
+                  onClick={() => this.goTo("Projects")}
                   style={{
-                    fontFamily: ["Oswald", "sans-serif"],
-                    fontSize: 16,
-                    color: "white",
-                    fontWeight: 500
+                    height: 40,
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    textDecoration: "none"
                   }}
-                  onMouseOver={event => onMouseOver(event)}
-                  onMouseOut={event => onMouseOut(event)}
+                  className={
+                    this.state.activeBtn === "Projects" ? "active" : null
+                  }
                 >
-                  WORK & PLAY
-                </Typography>
-              </Link>
-            </Toolbar>
-          </AppBar>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
+                  <Typography
+                    style={{
+                      fontFamily: ["Oswald", "sans-serif"],
+                      fontSize: 16,
+                      color: "white",
+                      fontWeight: 500
+                    }}
+                    onMouseOver={event => onMouseOver(event)}
+                    onMouseOut={event => onMouseOut(event)}
+                  >
+                    WORK & PLAY
+                  </Typography>
+                </Link>
+              </Toolbar>
+            </AppBar>
+            <Route path="/" exact component={Home} />
+            <Route path="/about" component={About} />
 
-          <Route path="/workplay" component={Projects} />
-        </div>
-      </Router>
+            <Route path="/workplay" component={Projects} />
+          </div>
+        </Router>
+        <BottomBar />
+      </div>
     );
   }
 }

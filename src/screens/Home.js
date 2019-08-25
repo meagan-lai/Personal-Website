@@ -55,86 +55,83 @@ export class Home extends React.Component {
 
   render() {
     return (
-      <div>
+      <div
+        style={{
+          height: "80%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          margin: "9.15%"
+        }}
+      >
         <div
           style={{
-            height: "80%",
             display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            margin: "11.20%"
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "center"
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              flexWrap: "wrap",
-              justifyContent: "center"
-            }}
-          >
-            <span className="image-word" style={{ marginRight: 35 }}>
-              <img src={this.state.letter[0] ? hDashed : h} />
+          <span className="image-word" style={{ marginRight: 35 }}>
+            <img src={this.state.letter[0] ? hDashed : h} />
 
-              <img src={this.state.letter[1] ? iDashed : i} />
-            </span>
-            <span className="image-word" style={{ marginRight: 35 }}>
-              <img src={this.state.letter[2] ? iDashed : i} />
-              <img
-                className="apostrophe"
-                src={this.state.letter[3] ? apostropheDashed : apostrophe}
-              />
-              <img src={this.state.letter[4] ? mDashed : m} />
-            </span>
+            <img src={this.state.letter[1] ? iDashed : i} />
+          </span>
+          <span className="image-word" style={{ marginRight: 35 }}>
+            <img src={this.state.letter[2] ? iDashed : i} />
+            <img
+              className="apostrophe"
+              src={this.state.letter[3] ? apostropheDashed : apostrophe}
+            />
+            <img src={this.state.letter[4] ? mDashed : m} />
+          </span>
 
-            <span className="image-word">
-              <img src={this.state.letter[5] ? mDashed : m} />
-              <img src={this.state.letter[6] ? eDashed : e} />
-              <img src={this.state.letter[7] ? aDashed : a} />
-              <img src={this.state.letter[8] ? gDashed : g} />
-              <img src={this.state.letter[9] ? aDashed : a} />
-              <img src={this.state.letter[10] ? nDashed : n} />
-            </span>
-          </div>
-
-          <div
-            style={{
-              fontFamily: ["Saira Extra Condensed", "sans-serif"],
-              fontSize: 30,
-              color: "#605f5f",
-              textAlign: "center"
-            }}
-          >
-            Front-End Developer | Aspiring Entrepreneur
-          </div>
-
-          <div
-            align="middle"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              margin: "2.5%"
-            }}
-          >
-            <Icon style={{ color: "white", margin: 10, fontSize: 40 }}>
-              <span class="mdi mdi-language-javascript" />
-            </Icon>
-            <Icon style={{ color: "white", margin: 10, fontSize: 40 }}>
-              <span class="mdi mdi-react" />
-            </Icon>
-            <Icon style={{ color: "white", margin: 10, fontSize: 40 }}>
-              <span class="mdi mdi-language-python" />
-            </Icon>
-            <Icon style={{ color: "white", margin: 10, fontSize: 40 }}>
-              <span class="mdi mdi-language-html5" />
-            </Icon>
-            <Icon style={{ color: "white", margin: 10, fontSize: 40 }}>
-              <span class=" mdi mdi-language-css3" />
-            </Icon>
-          </div>
+          <span className="image-word">
+            <img src={this.state.letter[5] ? mDashed : m} />
+            <img src={this.state.letter[6] ? eDashed : e} />
+            <img src={this.state.letter[7] ? aDashed : a} />
+            <img src={this.state.letter[8] ? gDashed : g} />
+            <img src={this.state.letter[9] ? aDashed : a} />
+            <img src={this.state.letter[10] ? nDashed : n} />
+          </span>
         </div>
-        <BottomBar />
+
+        <div
+          style={{
+            fontFamily: ["Saira Extra Condensed", "sans-serif"],
+            fontSize: 30,
+            color: "#605f5f",
+            textAlign: "center"
+          }}
+        >
+          Front-End Developer | Aspiring Entrepreneur
+        </div>
+
+        <div
+          align="middle"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            margin: "2.5%"
+          }}
+        >
+          <Icon style={{ color: "white", margin: 10, fontSize: 40 }}>
+            <span class="mdi mdi-language-javascript" />
+          </Icon>
+          <Icon style={{ color: "white", margin: 10, fontSize: 40 }}>
+            <span class="mdi mdi-react" />
+          </Icon>
+          <Icon style={{ color: "white", margin: 10, fontSize: 40 }}>
+            <span class="mdi mdi-language-python" />
+          </Icon>
+          <Icon style={{ color: "white", margin: 10, fontSize: 40 }}>
+            <span class="mdi mdi-language-html5" />
+          </Icon>
+          <Icon style={{ color: "white", margin: 10, fontSize: 40 }}>
+            <span class=" mdi mdi-language-css3" />
+          </Icon>
+        </div>
       </div>
     );
   }

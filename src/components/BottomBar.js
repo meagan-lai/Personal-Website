@@ -11,11 +11,11 @@ export default class BottomBar extends Component {
       <div
         align="middle"
         style={{
-          position: "static",
+          position: "relative",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          marginTop: "2.5%",
+          margin: "2.5%",
           justifySelf: "center"
         }}
       >
