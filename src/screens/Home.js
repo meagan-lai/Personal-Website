@@ -104,7 +104,7 @@ export class Home extends React.Component {
             textAlign: "center"
           }}
         >
-          Front-End Developer | Aspiring Entrepreneur
+          Customer Support Specialist | Front-End Developer
         </div>
 
         <div
@@ -129,7 +129,10 @@ export class Home extends React.Component {
             <span class="mdi mdi-language-html5" />
           </Icon>
           <Icon style={{ color: "white", margin: 10, fontSize: 40 }}>
-            <span class=" mdi mdi-language-css3" />
+            <span class="mdi mdi-language-css3" />
+          </Icon>
+          <Icon style={{ color: "white", margin: 10, fontSize: 40 }}>
+            <span class="mdi mdi-wordpress" />
           </Icon>
         </div>
       </div>
