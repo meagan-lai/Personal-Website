@@ -8,7 +8,7 @@ import {
 import profile from "../images/profile.jpg";
 import BottomBar from "../components/BottomBar";
 import Button from "@material-ui/core/Button";
-import pdf from "../images/Resume.pdf";
+import pdf from "../images/resume-update.pdf";
 import Typography from "@material-ui/core/Typography";
 import wave from "../images/wave.png";
 
