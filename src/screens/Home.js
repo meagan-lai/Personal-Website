@@ -17,7 +17,6 @@ import nDashed from "../images/title-letters/nDashed.png";
 import apostropheDashed from "../images/title-letters/commaDashed.png";
 import Icon from "@material-ui/core/Icon";
 import { setInterval } from "timers";
-import BottomBar from "../components/BottomBar";
 
 export class Home extends React.Component {
   constructor(props) {

@@ -9,7 +9,6 @@ import IconButton from "@material-ui/core/IconButton";
 import Tooltip from "@material-ui/core/Tooltip";
 import Button from "@material-ui/core/Button";
 import {
-  withStyles,
   MuiThemeProvider,
   createMuiTheme
 } from "@material-ui/core/styles";
