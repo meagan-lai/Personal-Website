@@ -15,7 +15,7 @@ import wave from "../images/wave.png";
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#55C6C6"
+      main: "#605f5f"
     }
   }
 });
