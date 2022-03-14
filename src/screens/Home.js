@@ -103,7 +103,7 @@ export class Home extends React.Component {
             textAlign: "center"
           }}
         >
-          Customer Support Specialist | Front-End Developer
+          Computing Consultant | Front-End Developer
         </div>
 
         <div
