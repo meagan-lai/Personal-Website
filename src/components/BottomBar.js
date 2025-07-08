@@ -19,8 +19,8 @@ export default class BottomBar extends Component {
           justifySelf: "center"
         }}
       >
-        <Tooltip title="MeaganLai@hotmail.com" placement="bottom">
-          <IconButton href="mailto:meaganlai@hotmail.com">
+        <Tooltip title="Meagan-Lai@outlook.com" placement="bottom">
+          <IconButton href="mailto:meagan-lai@outlook.com">
             <span class="mdi mdi-email-outline" style={{ color: "white" }} />
           </IconButton>
         </Tooltip>
